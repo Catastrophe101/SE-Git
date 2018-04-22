@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class navbar extends Component {
   render() {
     return (
-      <Navbar>
+      <Navbar fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
         <a href="#home">HOME</a>
@@ -13,7 +13,7 @@ export default class navbar extends Component {
     </Navbar.Header>
     <Nav>
       <NavDropdown eventKey={3} title="ABOUT" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Action</MenuItem>
+        <MenuItem eventKey={3.1}><a href="#about">About</a></MenuItem>
         <MenuItem eventKey={3.2}>Another action</MenuItem>
         <MenuItem eventKey={3.3}>Something else here</MenuItem>
         <MenuItem divider />
