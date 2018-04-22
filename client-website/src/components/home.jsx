@@ -31,7 +31,7 @@ class home extends Component {
     'Nam vestibulum accumsan nisl.'
   ];
     return (
-      <div>
+      <div class="container">
         <Grid>
       <div  align="centre">
         <br />
@@ -46,7 +46,8 @@ class home extends Component {
             <Image  align="centre" className="header-image" src="assets/clinicaldatamanagement.jpg" />
           </Carousel.Item>
         </Carousel>
-<div >
+        <br />
+<div full-width>
 <Jumbotron >
 <h2>WHY CHOOSE US?</h2>
 <p>
@@ -91,6 +92,7 @@ class home extends Component {
 </p>
 </Jumbotron>
 <div>
+        <br />
   <Grid>
     <Row>
 
@@ -104,6 +106,7 @@ class home extends Component {
        </Col>
     </Row>
     <Row>
+            <br />
       <div class="col-centered">
       <Well >
       <h2 align="center">Cost Effectiveness Analysis</h2>
