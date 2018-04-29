@@ -12,6 +12,8 @@ class Note extends Component{
         this.haddress=props.haddress,
         this.hno=props.hno,
         this.hmessage=props.hmessage,
+		this.company=props.company,
+		this.title=props.title,
         this.handleRemoveNote = this.handleRemoveNote.bind(this);
     }
 
@@ -30,7 +32,9 @@ class Note extends Component{
                 <h3>Name: { this.hname } </h3>
                 <h3>EmailAddress: { this.haddress }</h3>
                   <h3>Phone No: { this.hno }</h3>
-                  <h3>Messages:{this.hmessage}</h3>
+                  <h3>Company:{this.company}</h3>
+				  <h3>Title:{this.title}</h3>
+				  <h3>Messages:{this.hmessage}</h3>
             </div>
         )
     }
@@ -41,7 +45,9 @@ Note.propTypes = {
     hname: PropTypes.string,
     haddress: PropTypes.string,
     hno: PropTypes.string,
-    hmessage:PropTypes.string
+    hmessage:PropTypes.string,
+	company:PropTypes.string,
+	title:PropTypes.string
 }
 
 export default Note;

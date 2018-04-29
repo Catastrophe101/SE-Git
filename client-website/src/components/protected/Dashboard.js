@@ -27,6 +27,8 @@ export default class Dashboard extends Component {
           haddress: snap.val().Emailaddress,
           hno: snap.val().Phoneno,
           hmessage:snap.val().Message,
+		  company:snap.val().Company,
+		  title:snap.val().Title
         });
         this.setState({
           notes: previousNotes
@@ -68,13 +70,17 @@ export default class Dashboard extends Component {
                 hname={note.hname}
                 haddress={note.haddress}
                 hno={note.hno}
+				company={note.company}
+				title={note.title}
                 hmessage={note.hmessage}
                 removeNote={this.removeNote}/>
               )
             })
           }
         </div>
+		<div  align="center"><h2>No more messages</h2></div>
       </div>
+	  
     );
   }
 }
